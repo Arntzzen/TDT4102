@@ -10,7 +10,6 @@ using namespace TDT4102;
 void cannonBallViz(double targetPosition, int fieldLength, double initVelocityX, double initVelocityY,
 				   int timeSteps)
 {
-	/*
 	constexpr int w_width = 800;
 	constexpr int w_height = 500;
 	AnimationWindow window(100, 100, w_width, w_height, "Cannonball Visualizer"); //100, 100 angir x og y, som er overst til venstre i vinduet
@@ -35,5 +34,4 @@ void cannonBallViz(double targetPosition, int fieldLength, double initVelocityX,
 
 	std::cout << std::endl << "Close the window to continue." << std::endl;
 	window.wait_for_close();
-	*/
 }
