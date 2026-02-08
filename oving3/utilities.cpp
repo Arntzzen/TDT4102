@@ -1,6 +1,7 @@
 #include "std_lib_facilities.h"
 #include "utilities.h"
 #include <random>
+using namespace std;
 
 // BEGIN: 5a
 int randomWithLimits(int lowLim, int highLim){
