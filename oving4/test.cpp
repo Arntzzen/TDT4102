@@ -27,6 +27,7 @@ void testCallByReference()
 void testString(){
 	// 3b OG 3e gjøres inne i her
 	// BEGIN: 3e
-
+	string grades = randomizeString(8, 'F', 'A');
+	cout << grades << endl;
 	// END: 3e
 }

@@ -19,22 +19,33 @@
 
 // BEGIN: 2a
  // lag struct Student her
+ struct Student
+ {
+    string name;
+    string studyProgram;
+    int age;
+ };
+ 
 // END: 2a
 
 // BEGIN: 2b
 // deklarerer funksjonen printStudent her
+void printStudent(const Student& stud);
 // END: 2b
 
 // BEGIN: 2c
 // deklarerer funksjonen isInProgram her
+bool isInProgram(const Student& stud, const string& retning);
 // END: 2c
 
 // BEGIN: 3a
  // deklarerer funksjonen randomizeString her
+ string randomizeString(int antallTegn, char upperLim, char lowerLim);
 // END: 3a
 
 // BEGIN: 3c
  // deklarerer funksjonen readInputToString her
+ string readInputToString(int n, char upperLim, char lowerLim);
 // END: 3c
 
 // BEGIN: 3d
