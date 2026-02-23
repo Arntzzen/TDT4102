@@ -7,7 +7,7 @@ enum class Suit {
 	diamonds,
 	hearts,
 	spades,
-}
+};
 // END: 1a
 
 // BEGIN: 1b
@@ -25,7 +25,7 @@ enum class Rank {
 	queen = 12,
 	king = 13,
 	ace = 14,
-}
+};
 // END: 1b
 
 
@@ -57,13 +57,22 @@ const map<Suit, string> SuitToStringMap {
 
 
 // BEGIN: 1c
-
+string suitToString(Suit suit);
 // END: 1c
 
 // BEGIN: 1d
-
+string rankToString(Rank rank);
 // END: 1d
 
 // BEGIN: 2a
-
+class Card {
+private:
+	Suit s;
+	Rank r;
+public:
+	Card(Suit suit, Rank rank);
+	Suit getSuit();
+	Rank getRank();
+	string toString();
+};
 // END: 2a
