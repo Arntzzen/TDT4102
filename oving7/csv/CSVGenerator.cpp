@@ -70,20 +70,6 @@ std::string generateLine(int lineNmbr) {
     return line.str();
 }
 
-inline void drawProgressBar(size_t completed, size_t total) {
-    const int barSteps = 16;
-    double progress = double(completed) / double(total);
-    int stepsToDraw = int(barSteps * progress);
-    std::cout << "[";
-    for(int i = 0; i < stepsToDraw; i++) {
-        std::cout << "=";
-    }
-    for(int i = 0; i < barSteps - stepsToDraw; i++) {
-        std::cout << " ";
-    }
-    std::cout << "]";
-}
-
 
 int main() {
     std::ofstream file("cipher.csv");
@@ -105,7 +91,6 @@ int main() {
         }
         currentSize = file.tellp();
         std::cout << "\rGenerating CSV.. ";
-        drawProgressBar(currentSize, TARGET_SIZE);
         std::cout << std::flush;
     }
 

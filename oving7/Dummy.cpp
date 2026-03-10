@@ -2,7 +2,7 @@
 #include <iostream>
 #include <print>
 
-/*
+
 void dummyTest() {
     Dummy a;
     *a.num = 4;
@@ -13,11 +13,10 @@ void dummyTest() {
     std::cout << "b: " << *b.num << '\n';
     std::cout << "c: " << *c.num << '\n';
 
-    *b.num = 3;
-    *c.num = 5;
+    *b.num = 5;
+    *c.num = 1;
 
     std::cout << "a: " << *a.num << '\n';
     std::cout << "b: " << *b.num << '\n';
     std::cout << "c: " << *c.num << '\n';
 }
-*/

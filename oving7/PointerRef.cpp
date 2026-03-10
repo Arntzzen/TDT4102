@@ -6,7 +6,7 @@ using namespace std;
 
 void PointerRef::addPointer(int* ptr) {
     // BEGIN: 1a 
-
+    *ptr += 20;
     // END: 1a
 }
 
@@ -15,9 +15,13 @@ void PointerRef::addReference(int& ref) {
 }
 
 // BEGIN: 1b
-
+bool PointerRef::valueComparison(int* ptr, int& ref) {
+    return *ptr == ref;
+}
 // END: 1b
 
 // BEGIN: 1c
-
+bool PointerRef::addressComparison(int* ptr, int& ref) {
+    return ptr == &ref;
+}
 // END: 1c

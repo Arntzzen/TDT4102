@@ -6,7 +6,6 @@
 
 int main() {
     // Her kan du teste koden din
-    
+    dummyTest();
     return 0;
 }
-
